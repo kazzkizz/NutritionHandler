@@ -7,16 +7,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Button;
 
 public class NutritionHandler extends Activity {
 	
 	public final static String EXTRA_MESSAGE = "no.uib.nutritionapplication.MESSAGE";
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
+	
+	Button add;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -24,12 +21,34 @@ public class NutritionHandler extends Activity {
         return true;
     }
     
-    /** Called when the user clicks the Send button */
+    
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        add = (Button) findViewById(R.id.addMealButton);
+        
+        add.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+        
+    }
+
+    
+    /* Called when the user clicks the Send button test */ 
+    /*
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
+       Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.edit_message);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+    */
+    
 }
