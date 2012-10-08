@@ -6,6 +6,9 @@
     <string name="title_activity_main">Nutrition Handler</string>
     <string name="button_send">Send</string>
     <string name="title_activity_display_message">Search results</string>
-	<string name="add_meal">Add a meal</string>
-	<string name="enter_age">Skriv inn din alder</string>
+    <string name="add_meal">Add a meal</string>
+    <string name="enter_age">Skriv inn din alder</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_search">SearchActivity</string>
+
 </resources>
