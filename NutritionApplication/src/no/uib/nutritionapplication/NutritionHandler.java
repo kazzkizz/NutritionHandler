@@ -39,8 +39,6 @@ public class NutritionHandler extends Activity {
         
     }
 
-    
-    /* Called when the user clicks the Send button test */ 
 
     public void sendMessage(View view) {
        Intent intent = new Intent(this, DisplayMessageActivity.class);
@@ -48,7 +46,5 @@ public class NutritionHandler extends Activity {
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
-    }
-
-    
+    } 
 }
