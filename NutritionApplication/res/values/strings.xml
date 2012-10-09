@@ -2,10 +2,13 @@
 
     <string name="app_name">NutritionApplication</string>
     <string name="menu_settings">Settings</string>
-    <string name="enter_name">Skriv inn ditt navn</string>
     <string name="title_activity_main">Nutrition Handler</string>
     <string name="button_send">Send</string>
     <string name="title_activity_display_message">Search results</string>
 	<string name="add_meal">Add a meal</string>
-	<string name="enter_age">Skriv inn din alder</string>
+	
+	<string name="enter_name">Name</string>
+	<string name="enter_age">Age</string>
+	<string name="enter_height">Height</string>
+	<string name="enter_weight">Weight</string>
 </resources>

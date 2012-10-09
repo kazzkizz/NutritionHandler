@@ -10,12 +10,30 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/enter_name" />
-    
-    <EditText android:id="@+id/enter_age"
-        android:layout_weight="1"
+
+    <EditText
+        android:id="@+id/enter_age"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
         android:hint="@string/enter_age" />
+    
+    <EditText
+        android:id="@+id/enter_height"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/enter_height" />
+    
+    <EditText
+        android:id="@+id/enter_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/enter_weight" />
     
     <Button
         android:layout_width="wrap_content"
