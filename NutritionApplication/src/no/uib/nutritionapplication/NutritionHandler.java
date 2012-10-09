@@ -27,6 +27,8 @@ public class NutritionHandler extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub}
 				  });*/
+
+        
     }
     
     @Override
@@ -36,11 +38,11 @@ public class NutritionHandler extends Activity {
     }
 
 
-    public void sendMessage(View view) {
+    /*public void sendMessage(View view) {
        Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.enter_name);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
-    }
+    } */
 }
