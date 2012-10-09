@@ -5,11 +5,17 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
     
-    <EditText android:id="@+id/edit_message"
+    <EditText android:id="@+id/enter_name"
         android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="@string/edit_message" />
+        android:hint="@string/enter_name" />
+    
+    <EditText android:id="@+id/enter_age"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_age" />
     
     <Button
         android:layout_width="wrap_content"
@@ -17,12 +23,12 @@
         android:text="@string/button_send" 
         android:onClick="sendMessage"/>
     
-      <Button
+      <!--  <Button
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="@string/add_meal"
         android:layout_centerHorizontal="true"
         android:textSize="20dp"
-        android:id="@+id/addMealButton" />
+        android:id="@+id/addMealButton" />-->
     
 </LinearLayout>
