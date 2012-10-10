@@ -5,11 +5,13 @@
     <string name="title_activity_main">Nutrition Handler</string>
     <string name="button_send">Save profile</string>
     <string name="title_activity_display_message">Search results</string>
-	<string name="add_meal">Add a meal</string>
-	<string name="enter_name">What is your name?</string>
-	<string name="enter_age">How old are you?</string>
-	<string name="enter_height">How tall are you?</string>
-	<string name="enter_weight">How much do you weigh?</string>
-	<string name="enter_gender">What is your gender?</string>
-	
+    <string name="add_meal">Add a meal</string>
+    <string name="enter_name">What is your name?</string>
+    <string name="enter_age">How old are you?</string>
+    <string name="enter_height">How tall are you?</string>
+    <string name="enter_weight">How much do you weigh?</string>
+    <string name="enter_gender">What is your gender?</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_test">TestActivity</string>
+
 </resources>
