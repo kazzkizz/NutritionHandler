@@ -3,12 +3,13 @@
     <string name="app_name">NutritionApplication</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Nutrition Handler</string>
-    <string name="button_send">Send</string>
+    <string name="button_send">Save profile</string>
     <string name="title_activity_display_message">Search results</string>
 	<string name="add_meal">Add a meal</string>
+	<string name="enter_name">What is your name?</string>
+	<string name="enter_age">How old are you?</string>
+	<string name="enter_height">How tall are you?</string>
+	<string name="enter_weight">How much do you weigh?</string>
+	<string name="enter_gender">What is your gender?</string>
 	
-	<string name="enter_name">Name</string>
-	<string name="enter_age">Age</string>
-	<string name="enter_height">Height</string>
-	<string name="enter_weight">Weight</string>
 </resources>
