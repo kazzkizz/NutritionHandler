@@ -11,7 +11,6 @@
     <string name="enter_height">How tall are you?</string>
     <string name="enter_weight">How much do you weigh?</string>
     <string name="enter_gender">What is your gender?</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_test">TestActivity</string>
 
 </resources>
