@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="235dp"
+    android:layout_height="640dp"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/whatIsYourShape"
+        tools:context=".MainActivity" />
+        
+  	<RadioGroup 
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+    <RadioButton
+            android:id="@+id/radioLowIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioLowIntensity"
+            android:checked="false" />
+        
+    <RadioButton 
+            android:id="@+id/radioMediumIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioMediumIntensity"
+            android:checked="false" />
+        
+    <RadioButton 
+    	    android:id="@+id/radioHighIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioHighIntensity" />     
+            
+    </RadioGroup>
+            
+    
+    <Button 
+        android:id="@+id/btn_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Click to display a dialog"
+        android:onClick="onClick"/>
+
+</LinearLayout>
