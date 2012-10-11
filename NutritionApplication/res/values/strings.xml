@@ -11,6 +11,7 @@
     <string name="enter_height">How tall are you?</string>
     <string name="enter_weight">How much do you weigh?</string>
     <string name="enter_gender">What is your gender?</string>
+<<<<<<< HEAD
     <string name="title_activity_test">TestActivity</string>
     
     
@@ -26,5 +27,7 @@
     <string name="radioMediumIntensity">Medium intensity</string>
     <string name="radioHighIntensity">High intensity</string>
     
+=======
+>>>>>>> 1e244ca9407180978c3370c7c8923899bac1474e
 
 </resources>
