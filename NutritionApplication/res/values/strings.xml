@@ -11,23 +11,13 @@
     <string name="enter_height">How tall are you?</string>
     <string name="enter_weight">How much do you weigh?</string>
     <string name="enter_gender">What is your gender?</string>
-<<<<<<< HEAD
     <string name="title_activity_test">TestActivity</string>
     
-    
-    
-    <!-- Adde by Kristian, maybe some strings will cause trouble.  -->
-    <string name="app_name">Nutrition Handler for INFO331</string>
     <string name="buttonText">Next</string>
-    <string name="whatIsYourShape">What is your physical shape?</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">Nutrition-Handler</string>
+    <string name="whatIsYourShape">How much do you work out?</string>
     
     <string name="radioLowIntensity">Low intensity</string>
     <string name="radioMediumIntensity">Medium intensity</string>
     <string name="radioHighIntensity">High intensity</string>
-    
-=======
->>>>>>> 1e244ca9407180978c3370c7c8923899bac1474e
 
 </resources>
