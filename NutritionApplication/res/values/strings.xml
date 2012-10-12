@@ -13,11 +13,11 @@
     <string name="enter_gender">What is your gender?</string>
     <string name="title_activity_test">TestActivity</string>
     
-    <string name="buttonText">Next</string>
-    <string name="whatIsYourShape">How much do you work out?</string>
+    <string name="buttonNameNext">Next</string>
+    <string name="whatIsYourShape">How often do you work out?</string>
     
-    <string name="radioLowIntensity">Low intensity</string>
-    <string name="radioMediumIntensity">Medium intensity</string>
-    <string name="radioHighIntensity">High intensity</string>
+    <string name="radioLowIntensity">1-2 times a week</string>
+    <string name="radioMediumIntensity">3-4 times a week</string>
+    <string name="radioHighIntensity">5 times or more a week</string>
 
 </resources>
