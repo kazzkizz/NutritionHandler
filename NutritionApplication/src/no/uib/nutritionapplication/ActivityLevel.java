@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -45,7 +47,19 @@ public class ActivityLevel extends Activity {
         		}
 			}
 		});
+        
+        //--Next-button listener
+        Button nextButton = (Button) findViewById(R.id.btn_activityNext);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+        	
+        	public void onClick(View v) {
+        		//do something
+        		System.out.println("next-button-pressed");
+        	}
+        });
     }
+    
+    
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
