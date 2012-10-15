@@ -12,21 +12,12 @@ import android.widget.Button;
 public class NutritionHandler extends Activity {
 	
 	public final static String EXTRA_MESSAGE = "no.uib.nutritionapplication.MESSAGE";
-	
-	/*Button add;*/
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        /*add = (Button) findViewById(R.id.addMealButton);
-        
-        add.setOnClickListener(new View.OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub}
-				  });*/   
     }
     
     @Override
@@ -43,4 +34,9 @@ public class NutritionHandler extends Activity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+    
+    public void searchFood(View view) {
+        Intent intent = new Intent(this, SearchActivity.class);
+         startActivity(intent);
+     }
 }
