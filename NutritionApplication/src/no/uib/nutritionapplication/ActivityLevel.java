@@ -18,10 +18,9 @@ public class ActivityLevel extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_activity_level);
 
-
 		//--- Radiogroup listener
 		radiogroup = (RadioGroup) findViewById(R.id.radioGroup);
-		final Intent intent = new Intent();
+		Intent intent = new Intent();
 		radiogroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -32,7 +31,6 @@ public class ActivityLevel extends Activity {
 				group.addView(radioBtn1);
 				group.addView(radioBtn2);
 				group.addView(radioBtn3);
-				//				group.getFocusedChild();
 			}
 		});
 		
@@ -48,8 +46,6 @@ public class ActivityLevel extends Activity {
 			}
 		});
 	}
-
-
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
