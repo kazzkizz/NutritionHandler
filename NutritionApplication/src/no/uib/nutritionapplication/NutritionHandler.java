@@ -56,8 +56,14 @@ public class NutritionHandler extends Activity {
          startActivity(intent);
      }
     
+    
     public void searchFood(View view) {
         Intent intent = new Intent(this, SearchActivity.class);
          startActivity(intent);
      }
+
+    public void openActivityLevel (View view) {
+    	Intent intent = new Intent(this, ActivityLevel.class);
+    	startActivity(intent);
+    }
 }
