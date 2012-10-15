@@ -20,6 +20,6 @@
     <string name="radioMediumIntensity">3-4 times a week</string>
     <string name="radioHighIntensity">5 times or more a week</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_add_meal">AddMealActivity</string>
+    <string name="title_activity_add_meal">Adding new meal</string>
 
 </resources>

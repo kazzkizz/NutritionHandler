@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class SearchActivity extends Activity
 {
-
+public final static String EXTRA_MESSAGE = "no.uib.nutritionapplication.MESSAGE";
 private ListView list;
 private EditText edText;
 private String listview_array[] = { "Bread", "Rice", "Croissant", "Cheese", "Burger", "Soda", "Juice", "Chocolate", "Butter", "Jam" };
@@ -31,22 +31,23 @@ public void onCreate(Bundle savedInstanceState) {
 	edText = (EditText) findViewById(R.id.EditText01);
 	list.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listview_array));
 	
-	// Start Petter code
+
 	list.setOnItemClickListener(new OnItemClickListener() {
-		public void onItemClick(AdapterView<?> parent, View view, int position,
+		public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
 				long rowId) {
 			
-			String product = listview_array[position].toString();
-			
-			Intent i=new Intent(SearchActivity.this, AddMealActivity.class);
-			i.putExtra("product", product);
-			
-			startActivity(i);
-			
-			
+		    Intent intent = new Intent(SearchActivity.this, AddMealActivity.class);
+
+		    TextView textView = (TextView) itemClicked;  
+            String message = textView.getText().toString();  
+		    
+		    //String message = listview_array[position].toString();
+		    intent.putExtra(EXTRA_MESSAGE, message);
+		    startActivity(intent);
+
 		}
 	});
-	// End Petter code
+	
 	
 	edText.addTextChangedListener(new TextWatcher() {
 
