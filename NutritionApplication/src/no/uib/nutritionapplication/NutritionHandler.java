@@ -27,26 +27,31 @@ public class NutritionHandler extends Activity {
     }
 
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
+    	 Intent intent = new Intent(this, DisplayMessageActivity.class);
          EditText editName = (EditText) findViewById(R.id.enter_name);
          String message = editName.getText().toString();
-         intent.putExtra(EXTRA_MESSAGE, message);
-
+         intent.putExtra("name", message);
+         
+//         Used to get data from the value-pair.
+//         Bundle b =intent.getExtras();
+//         String n = (String) b.get("name");
+         
+         
          EditText editAge = (EditText) findViewById(R.id.enter_age);
-         String message1 = editAge.getText().toString();
-         intent.putExtra(EXTRA_MESSAGE, message1);
+         String ageString= editAge.getText().toString();
+         intent.putExtra("age", ageString);
 
          EditText editHeight = (EditText) findViewById(R.id.enter_height);
-         String message2 = editHeight.getText().toString();
-         intent.putExtra(EXTRA_MESSAGE, message2);
+         String heightString = editHeight.getText().toString();
+         intent.putExtra("height", heightString);
 
          EditText editWeight = (EditText) findViewById(R.id.enter_weight);
-         String message3 = editWeight.getText().toString();
-         intent.putExtra(EXTRA_MESSAGE, message3);
+         String weightString = editWeight.getText().toString();
+         intent.putExtra("weight", weightString);
 
          EditText editGender = (EditText) findViewById(R.id.enter_gender);
-         String message4 = editGender.getText().toString();
-         intent.putExtra(EXTRA_MESSAGE, message4);
+         String genderString= editGender.getText().toString();
+         intent.putExtra("gender", genderString);
 
          startActivity(intent);
      }
