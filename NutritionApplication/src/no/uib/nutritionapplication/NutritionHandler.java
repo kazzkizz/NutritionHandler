@@ -26,14 +26,30 @@ public class NutritionHandler extends Activity {
         return true;
     }
 
-
     public void sendMessage(View view) {
-       Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.enter_name);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+         EditText editName = (EditText) findViewById(R.id.enter_name);
+         String message = editName.getText().toString();
+         intent.putExtra(EXTRA_MESSAGE, message);
+
+         EditText editAge = (EditText) findViewById(R.id.enter_age);
+         String message1 = editAge.getText().toString();
+         intent.putExtra(EXTRA_MESSAGE, message1);
+
+         EditText editHeight = (EditText) findViewById(R.id.enter_height);
+         String message2 = editHeight.getText().toString();
+         intent.putExtra(EXTRA_MESSAGE, message2);
+
+         EditText editWeight = (EditText) findViewById(R.id.enter_weight);
+         String message3 = editWeight.getText().toString();
+         intent.putExtra(EXTRA_MESSAGE, message3);
+
+         EditText editGender = (EditText) findViewById(R.id.enter_gender);
+         String message4 = editGender.getText().toString();
+         intent.putExtra(EXTRA_MESSAGE, message4);
+
+         startActivity(intent);
+     }
     
     public void searchFood(View view) {
         Intent intent = new Intent(this, SearchActivity.class);

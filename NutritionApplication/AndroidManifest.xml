@@ -43,6 +43,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="no.uib.nutritionapplication.NutritionHandler"/>
             </activity>
+            
     </application>
 
 </manifest>
