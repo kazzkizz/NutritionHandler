@@ -17,6 +17,7 @@
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -37,13 +38,16 @@
                 android:value="no.uib.nutritionapplication.NutritionHandler" />
         </activity>
         
-        <activity
-            android:name=".ActivityLevel">
-            <meta-data 
+        <activity android:name=".ActivityLevel" >
+            <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="no.uib.nutritionapplication.NutritionHandler"/>
-            </activity>
-            
+                android:value="no.uib.nutritionapplication.NutritionHandler" />
+        </activity>
+        
+        <activity
+            android:name=".AddMealActivity"
+            android:label="@string/title_activity_add_meal" >
+        </activity>
     </application>
 
 </manifest>
