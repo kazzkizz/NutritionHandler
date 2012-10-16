@@ -1,17 +1,12 @@
 package no.uib.nutritionapplication;
-
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Button;
 
 public class NutritionHandler extends Activity {
-	
-	public final static String EXTRA_MESSAGE = "no.uib.nutritionapplication.MESSAGE";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,14 +24,9 @@ public class NutritionHandler extends Activity {
     public void sendMessage(View view) {
     	 Intent intent = new Intent(this, DisplayMessageActivity.class);
          EditText editName = (EditText) findViewById(R.id.enter_name);
-         String message = editName.getText().toString();
-         intent.putExtra("name", message);
-         
-//         Used to get data from the value-pair.
-//         Bundle b =intent.getExtras();
-//         String n = (String) b.get("name");
-         
-         
+         String nameString = editName.getText().toString();
+         intent.putExtra("name", nameString);
+        
          EditText editAge = (EditText) findViewById(R.id.enter_age);
          String ageString= editAge.getText().toString();
          intent.putExtra("age", ageString);

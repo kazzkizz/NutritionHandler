@@ -16,17 +16,21 @@ public class DisplayMessageActivity extends Activity {
 
 	    // Get the message from the intent
 	    Intent intent = getIntent();
-	    String message = intent.getStringExtra(NutritionHandler.EXTRA_MESSAGE);
+	    
+	    //Used to get data from the value-pair.
+	    Bundle b = intent.getExtras();
+	    String n = (String) b.get("name");    
 
 	    // Create the text view
 	    TextView textView = new TextView(this);
 	    textView.setTextSize(40);
-	    textView.setText(message);
+	    textView.setText(n);
 
 	    // Set the text view as the activity layout
 	    setContentView(textView);
 	}
 
+	   
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_display_message, menu);
