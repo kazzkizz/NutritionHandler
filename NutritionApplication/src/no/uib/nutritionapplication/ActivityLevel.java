@@ -20,7 +20,7 @@ public class ActivityLevel extends Activity {
 
 		//--- Radiogroup listener
 		radiogroup = (RadioGroup) findViewById(R.id.radioGroup);
-		Intent intent = new Intent();
+		final Intent intent = new Intent();
 		radiogroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -39,9 +39,9 @@ public class ActivityLevel extends Activity {
 
 
 			public void onClick(View v) {
-				RadioButton b = (RadioButton) radiogroup.getFocusedChild();
-				b.getText();
-				System.out.println(b.getText());
+//				RadioButton b = (RadioButton) radiogroup.getFocusedChild();
+//				b.getText();
+//				System.out.println(b.getText());
 				
 			}
 		});
