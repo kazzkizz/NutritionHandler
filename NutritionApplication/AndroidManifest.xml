@@ -11,17 +11,14 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
         <activity
             android:name=".NutritionHandler"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name=".DisplayMessageActivity"
             android:label="@string/title_activity_display_message" >
@@ -29,7 +26,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="no.uib.nutritionapplication.NutritionHandler" />
         </activity>
-        
         <activity
             android:name=".SearchActivity"
             android:label="@string/title_search_activity" >
@@ -37,17 +33,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="no.uib.nutritionapplication.NutritionHandler" />
         </activity>
-        
         <activity android:name=".ActivityLevel" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="no.uib.nutritionapplication.NutritionHandler" />
         </activity>
-        
-        <activity
-            android:name=".AddMealActivity"
-            android:label="@string/title_activity_add_meal" >
-        </activity>
-    </application>
 
+        <activity
+            android:name=".ActivityStoreData">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    </application>
 </manifest>

@@ -8,18 +8,19 @@
     <string name="title_activity_display_message">Search results</string>
     <string name="title_search_activity">Search results</string>
     <string name="add_meal">Add a meal</string>
+    
     <string name="enter_name">What is your name?</string>
     <string name="enter_age">How old are you?</string>
     <string name="enter_height">How tall are you?</string>
     <string name="enter_weight">How much do you weigh?</string>
     <string name="enter_gender">What is your gender?</string>
-    <string name="button_toActivityLevel">Choose activity level</string>
     <string name="buttonNameNext">Next</string>
+    
+    <string name="button_toActivityLevel">Your activity level</string>
     <string name="whatIsYourShape">How often do you work out?</string>
     <string name="radioLowIntensity">1-2 times a week</string>
     <string name="radioMediumIntensity">3-4 times a week</string>
     <string name="radioHighIntensity">5 times or more a week</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_add_meal">Adding new meal</string>
-
+    <string name="hello">Hello World, AndroidInternalStorageActivity!</string>
+    
 </resources>
