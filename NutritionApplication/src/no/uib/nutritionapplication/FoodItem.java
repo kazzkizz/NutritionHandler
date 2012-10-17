@@ -1,6 +1,6 @@
 package no.uib.nutritionapplication;
 
-public class FoodItems {
+public class FoodItem {
 
 	private String name;
 	private int protein;
@@ -9,7 +9,7 @@ public class FoodItems {
 	private int calories;
 	private String description;
 
-	public FoodItems(String name, int protein, int fat, int carbohydrates, int calories, String description) {
+	public FoodItem(String name, int protein, int fat, int carbohydrates, int calories, String description) {
 		setName(name);
 		setProtein(protein);
 		setFat(fat);
