@@ -20,7 +20,6 @@ public class DisplayMessageActivity extends Activity {
 	    //Used to get data from the value-pair.
 	    Bundle b = intent.getExtras();
 	    String n = (String) b.get("name");
-	    String a = (String) b.get("age");    
 
 	    // Create the text view
 	    TextView textView = new TextView(this);
