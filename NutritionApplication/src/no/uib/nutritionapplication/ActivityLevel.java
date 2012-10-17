@@ -28,20 +28,16 @@ public class ActivityLevel extends Activity {
 				RadioButton radioBtn2 = (RadioButton) findViewById(R.id.radioMediumIntensity);
 				RadioButton radioBtn3 = (RadioButton) findViewById(R.id.radioHighIntensity);
 
-				group.addView(radioBtn1);
-				group.addView(radioBtn2);
-				group.addView(radioBtn3);
 			}
 		});
 		
 		Button nextButton = (Button) findViewById(R.id.btn_activityNext);
 		nextButton.setOnClickListener(new View.OnClickListener() {
 
-
 			public void onClick(View v) {
-//				RadioButton b = (RadioButton) radiogroup.getFocusedChild();
-//				b.getText();
-//				System.out.println(b.getText());
+				RadioButton c = (RadioButton) findViewById(radiogroup.getCheckedRadioButtonId());
+				c.getText();
+				System.out.println(c.getText());
 				
 			}
 		});
