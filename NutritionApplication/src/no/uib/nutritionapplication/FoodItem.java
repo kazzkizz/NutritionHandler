@@ -8,7 +8,8 @@ public class FoodItem {
 	private int carbohydrates;
 	private int calories;
 	private String description;
-
+	
+	//This class sets up the different values for the object.
 	public FoodItem(String name, int protein, int fat, int carbohydrates, int calories, String description) {
 		setName(name);
 		setProtein(protein);
