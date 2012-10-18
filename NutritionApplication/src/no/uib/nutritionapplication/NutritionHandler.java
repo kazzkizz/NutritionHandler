@@ -12,7 +12,6 @@ public class NutritionHandler extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
     }
     
     @Override
@@ -31,20 +30,20 @@ public class NutritionHandler extends Activity {
          intent.putExtra("name", nameString);
         
          EditText editAge = (EditText) findViewById(R.id.enter_age);
-         int ageNumber= Integer.parseInt(editAge.getText().toString());
+         String ageNumber= editAge.getText().toString();
          intent.putExtra("age", ageNumber);
-//
-//         EditText editHeight = (EditText) findViewById(R.id.enter_height);
-//         int heightNumber= Integer.parseInt(editHeight.getText().toString());
-//         intent.putExtra("height", heightNumber);
-//
-//         EditText editWeight = (EditText) findViewById(R.id.enter_weight);
-//         int weightNumber= Integer.parseInt(editWeight.getText().toString());
-//         intent.putExtra("weight", weightNumber);
-//
-//         EditText editGender = (EditText) findViewById(R.id.enter_gender);
-//         String genderString= editGender.getText().toString();
-//         intent.putExtra("gender", genderString);
+
+         EditText editHeight = (EditText) findViewById(R.id.enter_height);
+         String heightNumber=editHeight.getText().toString();
+         intent.putExtra("height", heightNumber);
+
+         EditText editWeight = (EditText) findViewById(R.id.enter_weight);
+         String weightNumber= editWeight.getText().toString();
+         intent.putExtra("weight", weightNumber);
+
+         EditText editGender = (EditText) findViewById(R.id.enter_gender);
+         String genderString= editGender.getText().toString();
+         intent.putExtra("gender", genderString);
 
          startActivity(intent);
      }

@@ -9,18 +9,20 @@
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:context=".DisplayMessageActivity" />
+        tools:context=".DisplayMessageActivity"
+        android:hint="@string/enter_name" />
     
     <TextView 
         android:id="@+id/ageText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_age"/>
     
     <TextView 
         android:id="@+id/heightText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_weight" />
+        android:hint="@string/enter_height" />
     
     <TextView 
         android:id="@+id/weightText"
@@ -32,6 +34,6 @@
         android:id="@+id/genderText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_weight" />
+        android:hint="@string/enter_gender" />
     
 </LinearLayout>
