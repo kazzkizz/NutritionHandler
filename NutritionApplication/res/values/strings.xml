@@ -25,5 +25,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_add_meal">Adding new meal</string>
     <string name="title_activity_diet_plan">DietPlanActivity</string>
+    
 
 </resources>
