@@ -9,40 +9,40 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/whatIsYourShape"
-        tools:context=".ActivityLevel" />
+        android:text="@string/whatIsYourGoal"
+        tools:context=".DietPlanActivity" />
         
   	<RadioGroup
-  	    android:id="@+id/radioGroup"
+  	    android:id="@+id/DietradioGroup"
   	    android:layout_width="wrap_content"
   	    android:layout_height="wrap_content"
   	    android:paddingTop="20dp" >
         
     <RadioButton
-            android:id="@+id/radioLowIntensity"
+            android:id="@+id/radioLoseWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/radioLowIntensity"
+            android:text="@string/radioLoseWeight"
             android:checked="false" />
         
     <RadioButton 
-            android:id="@+id/radioMediumIntensity"
+            android:id="@+id/radioKeepWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/radioMediumIntensity"
+            android:text="@string/radioKeepWeight"
             android:checked="false" />
         
     <RadioButton 
-    	    android:id="@+id/radioHighIntensity"
+    	    android:id="@+id/radioGainWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/radioHighIntensity" />     
+            android:text="@string/radioGainWeight" />     
             
     </RadioGroup>
             
   	
     <Button
-        android:id="@+id/btn_activityNext"
+        android:id="@+id/btn_DietActivityNext"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_next"

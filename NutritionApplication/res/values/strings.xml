@@ -3,24 +3,27 @@
     <string name="app_name">NutritionApplication</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Nutrition Handler</string>
-    <string name="button_send">Next</string>
+    <string name="button_next">Next</string>
     <string name="button_search">Search for food</string>
+    <string name="onFinishedButtonClicked">Save</string>
     <string name="title_activity_display_message">Search results</string>
     <string name="title_search_activity">Search results</string>
     <string name="add_meal">Add a meal</string>
-    
-    <string name="enter_name">What is your name?</string>
-    <string name="enter_age">How old are you?</string>
-    <string name="enter_height">How tall are you?</string>
-    <string name="enter_weight">How much do you weigh?</string>
-    <string name="enter_gender">What is your gender?</string>
-    <string name="buttonNameNext">Next</string>
-    
-    <string name="button_toActivityLevel">Your activity level</string>
+    <string name="enter_name">Type your name</string>
+    <string name="enter_age">Type your age</string>
+    <string name="enter_height">Type your height</string>
+    <string name="enter_weight">Type your weight</string>
+    <string name="enter_gender">Choose gender</string>
     <string name="whatIsYourShape">How often do you work out?</string>
+    <string name="whatIsYourGoal">What is your goal?</string>
     <string name="radioLowIntensity">1-2 times a week</string>
     <string name="radioMediumIntensity">3-4 times a week</string>
     <string name="radioHighIntensity">5 times or more a week</string>
-    <string name="hello">Hello World, AndroidInternalStorageActivity!</string>
-    
+    <string name="radioLoseWeight">Lose weight</string>
+    <string name="radioKeepWeight">Keep my weight</string>
+    <string name="radioGainWeight">Gain weight</string>
+    <string name="title_activity_add_meal">Adding new meal</string>
+    <string name="title_activity_diet_plan">DietPlanActivity</string>
+    <string name="hello">Hey there</string>
+
 </resources>

@@ -18,27 +18,37 @@ public class ActivityLevel extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_activity_level);
 
-		//--- Radiogroup listener
+		/**
+		 * Radiobutton and button listeners. Retrieves a intent from
+		 * Nutritionhandler and adds "activityLevel" which is send to
+		 * displaymessage
+		 **/
+		
 		radiogroup = (RadioGroup) findViewById(R.id.radioGroup);
-		final Intent intent = new Intent();
 		radiogroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
-				RadioButton radioBtn1 = (RadioButton) findViewById(R.id.radioLowIntensity);
-				RadioButton radioBtn2 = (RadioButton) findViewById(R.id.radioMediumIntensity);
-				RadioButton radioBtn3 = (RadioButton) findViewById(R.id.radioHighIntensity);
 
 			}
 		});
-		
+
 		Button nextButton = (Button) findViewById(R.id.btn_activityNext);
 		nextButton.setOnClickListener(new View.OnClickListener() {
 
+			/**
+			 * When the next-button is clicked, add Ativitlevel to existing
+			 * intent and pass it to startActivity Creating a new intent that
+			 * will start the next activity, DisplayMessageActivity, and puts in
+			 * it the intent received from ActivityLevel.
+			 **/
+
 			public void onClick(View v) {
-				RadioButton c = (RadioButton) findViewById(radiogroup.getCheckedRadioButtonId());
-				c.getText();
-				System.out.println(c.getText());
-				
+				RadioButton radioButton = (RadioButton) findViewById(radiogroup.getCheckedRadioButtonId());
+				Intent intent = new Intent(ActivityLevel.this,DietPlanActivity.class);
+				Intent exsistingIntent = getIntent();
+				exsistingIntent.putExtra("activityLevel", radioButton.getText().toString());
+				intent.putExtras(exsistingIntent);
+				startActivity(intent);
 			}
 		});
 	}

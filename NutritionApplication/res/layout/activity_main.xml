@@ -14,19 +14,22 @@
         android:id="@+id/enter_age"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_age" />
+        android:hint="@string/enter_age"
+        android:digits="012345678" />
     
     <EditText
         android:id="@+id/enter_height"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_height" />
+        android:hint="@string/enter_height"
+        android:digits="0123456789" />
     
     <EditText
         android:id="@+id/enter_weight"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_weight" />
+        android:hint="@string/enter_weight" 
+        android:digits="0123456789" />
     
     <EditText
         android:id="@+id/enter_gender"
@@ -34,22 +37,17 @@
         android:layout_height="wrap_content"
         android:hint="@string/enter_gender" />
     
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_send" 
-        android:onClick="sendMessage"/>
     
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_next" 
+        android:onClick="nextButtonClick"/>
+    
+    <Button
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_search" 
         android:onClick="searchFood"/>
-    
-    <Button 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_toActivityLevel"
-        android:onClick="openActivityLevel"/>
     
 </LinearLayout>
