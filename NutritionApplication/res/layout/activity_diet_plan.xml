@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/whatIsYourGoal"
+        tools:context=".DietPlanActivity" />
+        
+  	<RadioGroup
+  	    android:id="@+id/DietradioGroup"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:paddingTop="20dp" >
+        
+    <RadioButton
+            android:id="@+id/radioLoseWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioLoseWeight"
+            android:checked="false" />
+        
+    <RadioButton 
+            android:id="@+id/radioKeepWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioKeepWeight"
+            android:checked="false" />
+        
+    <RadioButton 
+    	    android:id="@+id/radioGainWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioGainWeight" />     
+            
+    </RadioGroup>
+            
+  	
+    <Button
+        android:id="@+id/btn_DietActivityNext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_next"
+        android:onClick="onClick" />
+
+</LinearLayout>
