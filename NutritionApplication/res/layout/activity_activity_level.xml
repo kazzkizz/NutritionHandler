@@ -40,11 +40,12 @@
             
     </RadioGroup>
             
+  	
     <Button
         android:id="@+id/btn_activityNext"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/buttonNameNext"
-        android:onClick="nextClick" />
+        android:text="@string/onFinishedButtonClicked"
+        android:onClick="onClick" />
 
 </LinearLayout>

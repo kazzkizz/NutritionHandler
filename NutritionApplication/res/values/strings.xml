@@ -3,8 +3,9 @@
     <string name="app_name">NutritionApplication</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Nutrition Handler</string>
-    <string name="button_send">Next</string>
+    <string name="button_next">Next</string>
     <string name="button_search">Search for food</string>
+    <string name="onFinishedButtonClicked">Save</string>
     <string name="title_activity_display_message">Search results</string>
     <string name="title_search_activity">Search results</string>
     <string name="add_meal">Add a meal</string>
@@ -13,8 +14,6 @@
     <string name="enter_height">Type your height</string>
     <string name="enter_weight">Type your weight</string>
     <string name="enter_gender">Choose gender</string>
-    <string name="button_toActivityLevel">Choose activity level</string>
-    <string name="buttonNameNext">Next</string>
     <string name="whatIsYourShape">How often do you work out?</string>
     <string name="radioLowIntensity">1-2 times a week</string>
     <string name="radioMediumIntensity">3-4 times a week</string>

@@ -41,19 +41,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_send" 
-        android:onClick="sendMessage"/>
+        android:text="@string/button_next" 
+        android:onClick="nextButtonClick"/>
     
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_search" 
         android:onClick="searchFood"/>
-    
-    <Button 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_toActivityLevel"
-        android:onClick="openActivityLevel"/>
     
 </LinearLayout>

@@ -15,12 +15,14 @@ public class DisplayMessageActivity extends Activity {
 	private String height;
 	private String weight;
 	private String gender;
+	private String activityLevel;
 	
 	private TextView nameTextView; 
     private TextView ageTextView;
     private TextView heightTextView;
     private TextView weightTextView;
     private TextView genderTextView;
+    private TextView activityLevelTextView;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -37,18 +39,21 @@ public class DisplayMessageActivity extends Activity {
 	    	this.height = userData.getString("height");
 	    	this.weight = userData.getString("weight");
 	    	this.gender = userData.getString("gender");
+	    	this.activityLevel = userData.getString("activityLevel");
 	    	
 	    	this.nameTextView = (TextView) findViewById(R.id.nameText);
 	        this.ageTextView = (TextView) findViewById(R.id.ageText);
 	        this.heightTextView = (TextView) findViewById(R.id.heightText);
 	        this.weightTextView = (TextView) findViewById(R.id.weightText);
 	        this.genderTextView = (TextView) findViewById(R.id.genderText);
+	        this.activityLevelTextView = (TextView) findViewById(R.id.activityLevelText);
 	    
 		    this.nameTextView.setText(this.name);
 		    this.ageTextView.setText(this.age);
 		    this.heightTextView.setText(this.height);
 		    this.weightTextView.setText(this.weight);
 		    this.genderTextView.setText(this.gender);
+		    this.activityLevelTextView.setText(this.activityLevel);
 		    
 	    }
 	}

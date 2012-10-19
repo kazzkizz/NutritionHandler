@@ -20,8 +20,8 @@ public class NutritionHandler extends Activity {
         return true;
     }
 
-    public void sendMessage(View view) {
-    	 Intent intent = new Intent(this, DisplayMessageActivity.class);
+    public void nextButtonClick(View view) {
+    	 Intent intent = new Intent(this, ActivityLevel.class);
     	 
     	 /** EditText-field for personal information **/
     	 
@@ -52,11 +52,6 @@ public class NutritionHandler extends Activity {
         Intent intent = new Intent(this, SearchActivity.class);
          startActivity(intent);
      }
-    
-    public void openActivityLevel(View view) {
-    	Intent intent = new Intent(this, ActivityLevel.class);
-    	startActivity(intent);
-    }
 
     
 }
