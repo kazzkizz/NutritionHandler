@@ -15,11 +15,15 @@
     <string name="enter_weight">Type your weight</string>
     <string name="enter_gender">Choose gender</string>
     <string name="whatIsYourShape">How often do you work out?</string>
+    <string name="whatIsYourGoal">What is your goal?</string>
     <string name="radioLowIntensity">1-2 times a week</string>
     <string name="radioMediumIntensity">3-4 times a week</string>
     <string name="radioHighIntensity">5 times or more a week</string>
+    <string name="radioLoseWeight">Lose weight</string>
+    <string name="radioKeepWeight">Keep my weight</string>
+    <string name="radioGainWeight">Gain weight</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_add_meal">Adding new meal</string>
+    <string name="title_activity_diet_plan">DietPlanActivity</string>
 
-    
 </resources>

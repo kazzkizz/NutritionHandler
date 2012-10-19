@@ -44,7 +44,7 @@ public class ActivityLevel extends Activity {
 
 			public void onClick(View v) {
 				RadioButton radioButton = (RadioButton) findViewById(radiogroup.getCheckedRadioButtonId());
-				Intent intent = new Intent(ActivityLevel.this,DisplayMessageActivity.class);
+				Intent intent = new Intent(ActivityLevel.this,DietPlanActivity.class);
 				Intent exsistingIntent = getIntent();
 				exsistingIntent.putExtra("activityLevel", radioButton.getText().toString());
 				intent.putExtras(exsistingIntent);

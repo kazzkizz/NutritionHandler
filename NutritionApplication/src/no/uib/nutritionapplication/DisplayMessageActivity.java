@@ -16,6 +16,7 @@ public class DisplayMessageActivity extends Activity {
 	private String weight;
 	private String gender;
 	private String activityLevel;
+	private String dietPlan;
 	
 	private TextView nameTextView; 
     private TextView ageTextView;
@@ -23,7 +24,8 @@ public class DisplayMessageActivity extends Activity {
     private TextView weightTextView;
     private TextView genderTextView;
     private TextView activityLevelTextView;
-
+    private TextView dietPlanTextView;
+    
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
@@ -40,6 +42,7 @@ public class DisplayMessageActivity extends Activity {
 	    	this.weight = userData.getString("weight");
 	    	this.gender = userData.getString("gender");
 	    	this.activityLevel = userData.getString("activityLevel");
+	    	this.dietPlan = userData.getString("dietPlan");
 	    	
 	    	this.nameTextView = (TextView) findViewById(R.id.nameText);
 	        this.ageTextView = (TextView) findViewById(R.id.ageText);
@@ -47,6 +50,7 @@ public class DisplayMessageActivity extends Activity {
 	        this.weightTextView = (TextView) findViewById(R.id.weightText);
 	        this.genderTextView = (TextView) findViewById(R.id.genderText);
 	        this.activityLevelTextView = (TextView) findViewById(R.id.activityLevelText);
+	        this.dietPlanTextView = (TextView) findViewById(R.id.dietPlanText);
 	    
 		    this.nameTextView.setText(this.name);
 		    this.ageTextView.setText(this.age);
@@ -54,7 +58,7 @@ public class DisplayMessageActivity extends Activity {
 		    this.weightTextView.setText(this.weight);
 		    this.genderTextView.setText(this.gender);
 		    this.activityLevelTextView.setText(this.activityLevel);
-		    
+		    this.dietPlanTextView.setText(this.dietPlan);
 	    }
 	}
  

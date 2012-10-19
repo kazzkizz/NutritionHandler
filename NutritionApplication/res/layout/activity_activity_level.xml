@@ -45,7 +45,7 @@
         android:id="@+id/btn_activityNext"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/onFinishedButtonClicked"
+        android:text="@string/button_next"
         android:onClick="onClick" />
 
 </LinearLayout>
