@@ -33,23 +33,20 @@ import android.widget.TextView;
 public class AddMealActivity extends Activity{
 	
     public ArrayList<String> MealItems = new ArrayList<String>();
+    public FoodItem foodItem1 = new FoodItem("Bread", 17, 35, 170, 99, "One slice of morning bread");
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_add_meal);
-        
-        //ItemArray.add(message);
-        
-        //TextView food_item_textview = (TextView) findViewById(R.id.food_item);
-        
+            
         Intent intent = getIntent();
         String message = intent.getStringExtra(SearchActivity.EXTRA_MESSAGE);
         
         // Create the text view
         TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText(message);
+        textView.setTextSize(20);
+        textView.setText(foodItem1.toString());
 
         // Set the text view as the activity layout
         setContentView(textView);

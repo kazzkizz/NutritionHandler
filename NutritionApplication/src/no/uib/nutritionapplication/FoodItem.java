@@ -38,23 +38,31 @@ public class FoodItem {
 		this.description = description;
 	}
 	
-	public String getName(String name){
+	public String getName(){
 		return name;
 	}
-	public int getProtein(int protein){
+	public int getProtein(){
 		return protein;
 	}
-	public int getFat(int fat){
+	public int getFat(){
 		return fat;
 	}
-	public int getCarbs(int carbohydrates){
+	public int getCarbs(){
 		return carbohydrates;
 	}
-	public int getCalories(int calories){
+	public int getCalories(){
 		return calories;
 	}
-	public String getDesc(String description){
+	public String getDesc(){
 		return description;
 	}
+	
+	public String toString(){
+		String formattedFood = ("Name: "+ getName() + "\n" + "Protein: " + getProtein() + "\n" + 
+								"Fat: " + getFat() + "\n" + "Carbohydrates: " + getCarbs() + "\n" + "Calories: " + getCalories()
+								+ "\n" + "Description: " + getDesc());
+				return formattedFood;
+	}
+		
 }
 
