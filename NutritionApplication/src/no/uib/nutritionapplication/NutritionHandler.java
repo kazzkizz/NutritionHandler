@@ -12,6 +12,7 @@ public class NutritionHandler extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
     }
     
     @Override
@@ -44,14 +45,20 @@ public class NutritionHandler extends Activity {
          EditText editGender = (EditText) findViewById(R.id.enter_gender);
          String genderString= editGender.getText().toString();
          intent.putExtra("gender", genderString);
+         
 
          startActivity(intent);
      }
+    
+    
     
     public void searchFood(View view) {
         Intent intent = new Intent(this, SearchActivity.class);
          startActivity(intent);
      }
-
     
+    public void onClickOpenPreferences(View view) {
+    	Intent intent = new Intent(this, AppPreferenceActivity.class);
+    	startActivity(intent);
+    }    
 }
