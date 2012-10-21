@@ -7,14 +7,14 @@
     
     <Button 
         android:id="@+id/button_Preferences"
-        android:text="Load preferences screen"
+        android:text="@string/LoadScreen"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
         android:onClick="onClickLoad" />
     
     <Button 
         android:id="@+id/button_DisplayValues"
-        android:text="Display preferences values"
+        android:text="@string/DisplayValue"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
         android:onClick="onClickDisplay" />
@@ -29,7 +29,7 @@
         android:id="@+id/button_modifyValues"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Modify preferences values"
+        android:text="@string/ModifyValue"
         android:onClick="onClickModify" />
     
 </LinearLayout>

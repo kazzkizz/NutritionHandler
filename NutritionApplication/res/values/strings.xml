@@ -16,8 +16,8 @@
     <string name="enter_gender">Choose gender</string>
     <string name="whatIsYourShape">How often do you work out?</string>
     <string name="whatIsYourGoal">What is your goal?</string>
-    <string name="radioLowIntensity">1-2 times a week</string>
-    <string name="radioMediumIntensity">3-4 times a week</string>
+    <string name="radioLowIntensity">1–2 times a week</string>
+    <string name="radioMediumIntensity">3–4 times a week</string>
     <string name="radioHighIntensity">5 times or more a week</string>
     <string name="radioLoseWeight">Lose weight</string>
     <string name="radioKeepWeight">Keep my weight</string>
@@ -25,5 +25,9 @@
     <string name="title_activity_add_meal">Adding new meal</string>
     <string name="title_activity_diet_plan">DietPlanActivity</string>
     <string name="hello">Hey there</string>
+    <string name="LoadScreen">Load preferences screen</string>
+    <string name="DisplayValue">Display preference values</string>
+    <string name="ModifyValue">Modify preference values</string>
+    
     
 </resources>

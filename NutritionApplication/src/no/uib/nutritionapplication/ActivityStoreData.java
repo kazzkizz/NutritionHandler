@@ -55,7 +55,8 @@ package no.uib.nutritionapplication;
 	  
 	    	 }
 	     }
-	    		 );
+	     
+	    );
 	 
 	 }
 	 
