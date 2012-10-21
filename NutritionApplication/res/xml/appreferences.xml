@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+     xmlns:android="http://schemas.android.com/apk/res/android">
+    	<PreferenceCategory 
+    	    android:title="Preferences">
+        <EditTextPreference 
+            android:summary="Enter a text string" 
+            android:title="Edit name"
+            android:key="editNamePref"/> 
+        <EditTextPreference 
+            android:summary="Enter a number" 
+            android:title="Edit age"
+            android:key="editAgePref"/> 
+        <EditTextPreference 
+            android:summary="Enter a number" 
+            android:title="Edit height"
+            android:key="editHeightPref"/> 
+        <EditTextPreference 
+            android:summary="Enter a number" 
+            android:title="Edit weight"
+            android:key="editWeightPref"/> 
+        <EditTextPreference 
+            android:summary="Enter a text string" 
+            android:title="Edit gender"
+            android:key="editGenderPref"/> 
+        <PreferenceScreen 
+            android:title="Activity level"
+            android:summary="Change activity level"
+            android:key="activityLevelPrefScreen">
+            <EditTextPreference 
+                android:summary="Enter a string"
+                android:title="Edit text (second screen)"
+                android:key="secondEditTextPref"/>
+        </PreferenceScreen>
+         <PreferenceScreen 
+            android:title="Diet plan"
+            android:summary="Change diet plan"
+            android:key="activityLevelPrefScreen">
+            <EditTextPreference 
+                android:summary="Enter a string"
+                android:title="Edit text (second screen)"
+                android:key="secondEditTextPref"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>
