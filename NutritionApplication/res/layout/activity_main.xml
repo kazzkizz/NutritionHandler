@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     
+ 
+    
     <EditText android:id="@+id/enter_name"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -39,15 +41,25 @@
     
     
     <Button
+        android:id="@+id/nextButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_next" 
         android:onClick="nextButtonClick"/>
     
     <Button
+        android:id="@+id/searchButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_search" 
         android:onClick="searchFood"/>
+    
+    
+    <Button 
+        android:id="@+id/button_openPreferences"
+        android:text="Preferences"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:onClick="onClickOpenPreferences" />
     
 </LinearLayout>

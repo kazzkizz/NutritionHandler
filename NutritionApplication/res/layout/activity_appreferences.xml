@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"> 
+    
+    <Button 
+        android:id="@+id/button_Preferences"
+        android:text="Load preferences screen"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:onClick="onClickLoad" />
+    
+    <Button 
+        android:id="@+id/button_DisplayValues"
+        android:text="Display preferences values"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:onClick="onClickDisplay" />
+    
+    <EditText
+        android:id="@+id/textString"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="tada"/>  
+        
+    <Button 
+        android:id="@+id/button_modifyValues"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Modify preferences values"
+        android:onClick="onClickModify" />
+    
+</LinearLayout>

@@ -55,7 +55,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="no.uib.nutritionapplication.NutritionHandler "  />
             </activity>    
-            
-        </application>
-           
+               
+        <activity android:name=".AppPreferenceActivity">
+            <intent-filter> 
+                <action
+                    android:name="android.support.PARENT_ACTIVITY" />
+                    <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+    </application>
 </manifest>
