@@ -1,13 +1,6 @@
 package no.uib.nutritionapplication;
 
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
- 
+import java.io.File; 
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -46,44 +39,27 @@ public class StoreData2Activity extends Activity implements OnClickListener{
  
  
  public void onClick(View v) {
- 
   EditText myInputText = (EditText) findViewById(R.id.myInputText);
   TextView responseText = (TextView) findViewById(R.id.responseText);
   String myData = "";
- 
+
+	subMethods s = new subMethods();
+	s.setFilename("profile");
+	s.setDirectory(myInternalFile);
+  
   switch (v.getId()) {
   	case R.id.saveInternalStorage:
-  		try {
-  			FileOutputStream fos = new FileOutputStream(myInternalFile);
-  			fos.write(myInputText.getText().toString().getBytes());
-  			fos.close();
-  		} 
-  		catch (IOException e) {
-  			e.printStackTrace();
-  		}
+  		s.storeData(myInputText);
+  		
   		myInputText.setText("");
-  		responseText
-  		.setText("MySampleFile.txt saved to Internal Storage...");
+  		responseText.setText("text have been saved to Internal Storage...");
   		break;
  
   	case R.id.getInternalStorage:
-  		try {
-  			FileInputStream fis = new FileInputStream(myInternalFile);
-  			DataInputStream in = new DataInputStream(fis);
-  			BufferedReader br =	new BufferedReader(new InputStreamReader(in));
-  			String strLine;
-  			
-  			while ((strLine = br.readLine()) != null) {
-  				myData = myData + strLine;
-  			}
-  			in.close();
-  		} 
-  		catch (IOException e) {
-  			e.printStackTrace();
-  		}
+  		s.getData();
+  		
   		myInputText.setText(myData);
-  		responseText
-  		.setText("MySampleFile.txt data retrieved from Internal Storage...");
+  		responseText.setText("text have been retrieved from Internal Storage...");
   		break;
   	}
   }
