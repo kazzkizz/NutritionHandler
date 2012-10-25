@@ -21,8 +21,6 @@ public class AddMealActivity extends Activity {
 }
 */
 
-
-
 import java.util.ArrayList;
 
 import android.app.Activity;
@@ -51,8 +49,6 @@ public class AddMealActivity extends Activity{
         // Set the text view as the activity layout
         setContentView(textView);
         
-        
 
- 
     }
 }

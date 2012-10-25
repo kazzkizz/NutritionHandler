@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    
  
     
     <EditText android:id="@+id/enter_name"
@@ -17,7 +16,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_age"
-        android:digits="012345678" />
+        android:digits="0123456789" />
     
     <EditText
         android:id="@+id/enter_height"
