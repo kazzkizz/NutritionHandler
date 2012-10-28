@@ -1,13 +1,62 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Hello Marius!"
+        android:textSize="24dp"
+        tools:context=".HomePageActivity" />
+    
+	<RelativeLayout
+	    android:id="@+id/InnerRelativeLayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true" >
+    
+    <Button
+        android:id="@+id/button_openPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickOpenPreferences"
+        android:text="@string/prefs" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/button_openPreferences"
+        android:onClick="searchFood"
+        android:text="@string/button_search" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        tools:context=".HomePageActivity" />
+        android:layout_above="@+id/button_openPreferences"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="189dp"
+        android:text="Calories remaining: 1650"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/default_avatar"
+        android:contentDescription="@string/desc" />
+    
+    </RelativeLayout>
 
 </RelativeLayout>

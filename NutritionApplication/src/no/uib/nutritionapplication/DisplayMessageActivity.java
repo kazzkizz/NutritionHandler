@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 public class DisplayMessageActivity extends Activity {
@@ -77,5 +78,12 @@ public class DisplayMessageActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+    
+    public void homePage(View view) {
+        Intent intent = new Intent(this, HomePageActivity.class);
+         startActivity(intent);
+     }
+    
+
 
 }
