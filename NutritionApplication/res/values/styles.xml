@@ -1,5 +1,8 @@
 <resources>
 
     <style name="AppTheme" parent="android:Theme.Light" />
+    <style name="NH">1</style>
+    <style name="NH2">2</style>
+    <style name="NH3">100</style>
 
 </resources>

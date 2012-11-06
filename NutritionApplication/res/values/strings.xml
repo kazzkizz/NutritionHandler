@@ -27,5 +27,6 @@
     <string name="button_save">Save</string>
     <string name="prefs">Preferences</string>
     <string name="desc">Profile picture</string>
+        
 
 </resources>
